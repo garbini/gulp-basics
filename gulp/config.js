@@ -6,8 +6,11 @@ module.exports = {
     sass: {
         src: src + "/**/*.{sass,scss}",
         dest: dest,
+        autoprefixer: {
+            browsers: ['last 5 version']
+        },
         settings: {
-            // errLogToConsole: true,
+            errLogToConsole: false,
             outputStyle: 'compressed'
         }
     }
